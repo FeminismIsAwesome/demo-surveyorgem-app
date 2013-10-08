@@ -1,0 +1,8 @@
+-@responses.each do |response|
+	.key
+		= response.question.text
+	.value
+		= response.datetime_value
+		= response.text_value
+		
+= link_to "return to all surveys", admin_index_url
